@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#181a1e] font-roboto">
+
+<div class="container h-screen w-screen relative flex ">
+    <!-- navber section -->
+    <div class="w-full flex items-center justify-between fixed px-10 h-20 shadow-lg">
+      <div class="flex items-center gap-2 text-white">
+        <img class="w-12 h-12 mr-2" 
+        src="/img/icons8-tailwindcss-48.png" alt="">
+        <h2 class="text-2xl font-bold">Nat<span class="text-cyan-300">Admin</span></h2>
+        <h2 class="text-3xl ml-16 text-amber-500">Analytics</h2>
+      </div>
+  
+      <div class="flex items-center justify-center gap-4">
+        <div class="">
+          <p class="text-white">Hello Tk <span class="text-cyan-300">Admin</span></p>
+        </div>
+  
+        <div class="text-white gap-4 flex items-center">
+          <i class="fa-solid fa-circle-info"></i>
+          <i class="fa-solid fa-gear"></i>
+          <i class="fa-solid fa-bell"></i>
+  
+          <div class="flex">
+            <img class="w-8 h-8 object-cover rounded-full border border-green-400" 
+            src="/img/465543033_2320804278253535_1802609918628355534_n.jpg" alt="">
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    <!-- navber section -->
+  
+    <!-- sidebar -->
+    <div class=" w-60 h-[850px] flex flex-col fixed ml-10 top-24 bg-[#2a2b2c] z-5 text-white rounded-3xl">
+      <!-- <div class="flex items-center w-full justify-center pt-4">
+        <p class="text-xl">Panel DashBoard</p>
+      </div> -->
+
+      <div class="w-full flex items-center justify-center mt-4" >
+        <img class="w-28 h-28 object-cover rounded-full" 
+        src="/img/465543033_2320804278253535_1802609918628355534_n.jpg" alt="">
+      </div>
+
+      <div class="w-full flex items-center justify-center text-xl">
+        <p class="text-gray-400">Role: <span class="text-amber-500">Super Admin</span></p>
+      </div>
+
+      <div class="w-full flex items-center justify-center">
+        <p class="text-gray-500">Work for balance</p>
+      </div>
+
+      <!-- section button -->
+      <div class="flex w-full flex-col h-full items-center pt-6 gap-4">
+
+        <div class="w-full flex items-center justify-center px-14 hover:bg-[#181a1e]">
+          <i class="fa-brands fa-slack text-orange-500 text-xl"></i>
+          <button class="p-4 w-full">DashBoard</button>
+        </div>
+
+        <div class="w-full flex items-center justify-center px-14 hover:bg-[#181a1e]">
+          <i class="fa-solid fa-user text-orange-500 text-xl"></i>
+          <button class="p-4 w-full pr-14">User</button>
+        </div>
+
+        <div class="w-full flex items-center justify-center px-14 hover:bg-[#181a1e]">
+          <i class="fa-solid fa-clock-rotate-left text-orange-500 text-xl"></i>
+          <button class="p-4 w-full pr-11">History</button>
+        </div>
+
+        <div class="w-full flex items-center justify-center px-14 hover:bg-[#181a1e]">
+          <i class="fa-solid fa-chart-pie text-orange-500 text-xl"></i>
+          <button class="p-4 w-full pr-7">Analytics</button>
+        </div>
+
+        <div class="w-full flex items-center justify-center px-14 hover:bg-[#181a1e]">
+          <i class="fa-solid fa-paper-plane text-orange-500 text-xl"></i>
+          <button class="p-4 w-full pr-11">Tickets</button>
+        </div>
+
+        <div class="w-full flex items-center justify-center px-14 hover:bg-[#181a1e]">
+          <i class="fa-solid fa-scale-balanced text-orange-500 text-xl"></i>
+          <button class="p-4 w-full pr-6">Sale List</button>
+        </div>
+
+        <div class="w-full flex items-center justify-center px-14 hover:bg-[#181a1e]">
+          <i class="fa-regular fa-file-lines text-orange-500 text-xl"></i>
+          <button class="p-4 w-full pr-6">Reports</button>
+        </div>
+
+        <div class="w-full flex items-center justify-center px-14 hover:bg-[#181a1e]">
+          <i class="fa-solid fa-gear text-orange-500 text-xl"></i>
+          <button class="p-4 w-full pr-10">Setting</button>
+        </div>
+
+        <div class="w-full flex items-center justify-center px-14 hover:bg-[#181a1e]">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <button class="p-4 w-full pr-10">Logout</button>
+        </div>
+      </div>
+      <!-- section button -->
+    </div>
+    <!-- sidebar -->
+</div>
+
+  <!-- content -->
+    <div class="flex-1 ml-20 w-full fixed top-24 text-white">
+      <div class=" flex justify-between items-center mt-10 px-60">
+        <h1 class="text-2xl font-bold uppercase">Total income<i class="fa-solid fa-sack-dollar ml-3 text-orange-400"></i></h1>
+        <div class="flex space-x-4 mr-95">
+
+          <button class="bg-orange-400 hover:bg-gray-100 hover:text-orange-500 px-6 py-2 rounded-full">
+            <i class="fa-solid fa-cart-shopping mr-2"></i>Chart
+          </button>
+
+          <button class="bg-amber-400 hover:bg-gray-100 hover:text-orange-500 px-6 py-2 rounded-full">
+            <i class="fa-solid fa-truck mr-2"></i>Delivery
+          </button> 
+
+          <button class="bg-black hover:bg-gray-100 hover:text-orange-500 px-6 py-2 rounded-full">
+            <i class="fa-solid fa-boxes-stacked mr-2"></i>Stock
+          </button> 
+
+          <button class="bg-gray-400 hover:bg-gray-100 hover:text-orange-500 px-6 py-2 rounded-full">
+            <i class="fa-solid fa-layer-group mr-2"></i>All
+          </button>
+          
+        </div>
+      </div>
+
+      <div class="flex ml-60 text-white gap-14 mt-5">
+        <div class="bg-[#202528] flex flex-col p-6 rounded-2xl w-90  border-2 border-cyan-300">
+
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col gap-2">
+              <h3 class="text-lg text-cyan-400">Total Sales</h3>
+              <p class="text-3xl">$ 65,022</p>
+              <p class="text-green-500"><i class="fa-solid fa-arrow-trend-up mr-2 text-lg text-green-500"></i>+ 5.15%</p>
+            </div>
+
+            <div class="h-16 w-16">
+                <img src="https://static.cdnlogo.com/logos/g/43/graphene.svg"></a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="bg-[#202528] flex flex-col p-6 rounded-2xl w-90 border-2 border-purple-400">
+
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col gap-2">
+              <h3 class="text-lg text-purple-500">Using Stream</h3>
+              <p class="text-3xl">105,024 user</p>
+              <p class="text-green-500"><i class="fa-solid fa-arrow-trend-up mr-2 text-lg text-green-500"></i>+ 85.2%</p>
+            </div>
+
+            <div class="w-26">
+              <img src="https://static.cdnlogo.com/logos/s/70/steam-icon.svg">
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="bg-[#202528] flex flex-col p-6 rounded-2xl w-90  border-2 border-red-500">
+
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col gap-2">
+              <h3 class="text-lg text-red-500">ETH Transfor</h3>
+              <p class="text-3xl">105,024 ETH</p>
+              <p class="text-green-500"><i class="fa-solid fa-arrow-trend-up mr-2 text-lg text-green-500"></i>120.36M ETH</p>
+            </div>
+
+            <div class="w-35 ">  
+              <img src="https://static.cdnlogo.com/logos/e/95/ethereum.svg"></a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="text-white ml-60 mt-4">
+        <h2 class="text-xl mb-4 font-bold uppercase">User Working<i class="fa-solid fa-users ml-2 text-orange-400"></i></h2>
+
+        <div class="bg-[#202528] flex items-center justify-around p-10 w-[1200px] text-center rounded-xl gap-2">
+
+          <div>
+            <img class="w-24 h-24 object-cover rounded-full border border-green-500" 
+            src="/img/thong.jpg" alt="">
+            <h3 class="font-bold text-2xl mt-2">THONG</h3>
+            <p class="text-gray-400 mt-2">Now Online</p>
+          </div>
+
+          <div>
+            <img class="w-24 h-24 object-cover rounded-full border border-red-500" 
+            src="/img/gap.jpg" alt="">
+            <h3 class="font-bold text-2xl mt-2">GAB</h3>
+            <p class="text-gray-400 mt-2">Offine</p>
+          </div>
+
+          <div>
+            <img class="w-24 h-24 object-cover rounded-full" 
+            src="/img/dew.jpg" alt="">
+            <h3 class="font-bold text-2xl mt-2">DEW</h3>
+            <p class="text-gray-400 mt-2">3 Hour Ago</p>
+          </div>
+
+          <div>
+            <img class="w-24 h-24 object-cover rounded-full border border-green-500" 
+            src="/img/kaoy.jpg" alt="">
+            <h3 class="font-bold text-2xl mt-2">KYAO</h3>
+            <p class="text-gray-400 mt-2">Now Online</p>
+          </div>
+
+          <div>
+            <img class="w-24 h-24 object-cover rounded-full border border-green-500" 
+            src="/img/ploy.jpg" alt="">
+            <h3 class="font-bold text-2xl mt-2">PLOY</h3>
+            <p class="text-gray-400 mt-2">Now Online</p>
+          </div>
+
+          <div>
+            <img class="w-24 h-24 object-cover rounded-full border border-red-500" 
+            src="/img/preem.jpg" alt="">
+            <h3 class="font-bold text-2xl mt-2">PREEM</h3>
+            <p class="text-gray-400 mt-2">Offine</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="ml-60 mt-4 ">
+        <h2 class="font-bold uppercase text-xl">Recent Order</h2>
+
+        <div class="flex w-[1200px] mt-4 ">
+          <div class="bg-[#202528] w-full rounded-3xl p-7">
+            <table class="w-full">
+              <thead>
+                <tr class="text-left text-gray-400">
+                  <th class="pb-3 px-7">Name</th>
+                  <th class="pb-3 px-3">Price</th>
+                  <th class="pb-3">Number</th>
+                  <th class="pb-3 px-6">Payment</th>
+                  <th class="pb-3 px-5">Status</th>
+                  <th class="pb-3 px-4"></th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td class="pb-3 px-7 text-orange-300">Tailwind</td>
+                  <td class="pb-3 px-3">$180</td>
+                  <td class="pb-3">659824</td>
+                  <td class="pb-3 px-6">Truemoney</td>
+                  <td class="pb-3 px-5 text-red-400">Decilled</td>
+                  <td class="pb-3 px-4">Details</td>
+                </tr>
+
+                <tr>
+                  <td class="pb-3 px-7 text-orange-300">Java Tutorail</td>
+                  <td class="pb-3 px-3">$20</td>
+                  <td class="pb-3">452687</td>
+                  <td class="pb-3 px-6">Paypal</td>
+                  <td class="pb-3 px-5 text-blue-400">Pending</td>
+                  <td class="pb-3 px-4">Details</td>
+                </tr>
+
+                <tr>
+                  <td class="pb-3 px-7 text-orange-300">Python Tutortail</td>
+                  <td class="pb-3 px-3">$10</td>
+                  <td class="pb-3">748523</td>
+                  <td class="pb-3 px-6">SCB</td>
+                  <td class="pb-3 px-5 text-green-400">Success</td>
+                  <td class="pb-3 px-4">Details</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-96 h-80 fixed top-[90px] rounded-3xl bg-[#202528] right-20">
+      <div class="flex flex-col items-center justify-center">
+        <div class="">
+          <img class="w-48 h-48"
+          src="https://static.cdnlogo.com/logos/w/78/webhook.svg">
+        </div>
+
+
+        <div class="flex flex-col items-center justify-center mt-4 text-white text-xl gap-y-4">
+          <p class="text-2xl font-bold">Admin Dashboard</p>
+          <p class="text-gray-400">Im web Developer Full Stack</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="w-96 fixed top-[425px] right-20">
+
+      <div>
+
+        <div class="flex justify-between items-center text-orange-500 font-bold">
+          <h3 class=" text-3xl">Reminders</h3>
+          <i class="fa-solid fa-bell text-2xl bg-gray-800 p-2 rounded-full"></i>
+        </div>
+
+        <div class="bg-[#202528] mt-4 rounded-lg text-white ">
+          
+          <div class="flex items-center justify-between p-4 space-x-4">
+            <i class="fa-solid fa-headset text-3xl text-red-500 ml-2"></i>
+            <div class="text-lg">
+              <h4 class="font-bold">Workshop Class 01</h4>
+              <span class="text-green-400">NodeJs</span>
+              <p class="text-gray-400">12.00 AM - 12.30 AM</p>
+            </div>
+
+            <div class="w-16 h-16">
+              <img src="https://static.cdnlogo.com/logos/n/94/nodejs-icon.svg">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="bg-[#202528] mt-4 rounded-lg text-white ">
+          
+          <div class="flex items-center justify-between p-4 space-x-4">
+            <i class="fa-solid fa-users text-3xl text-pink-500 ml-2"></i>
+            <div class="text-lg">
+              <h4 class="font-bold">Workshop Class 02</h4>
+              <span class="text-green-400">TailwindCSS</span>
+              <p class="text-gray-400">13.00 AM - 13.30 AM</p>
+            </div>
+
+            <div class="w-16 h-16 ">
+              <img src="https://static.cdnlogo.com/logos/t/58/tailwindcss.svg">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="bg-[#202528] mt-4 rounded-lg text-white ">
+          
+          <div class="flex items-center justify-between p-4 space-x-4">
+            <i class="fa-solid fa-thumbtack text-3xl text-purple-400 ml-2"></i>
+            <div class="text-lg">
+              <h4 class="font-bold">Workshop Class 03</h4>
+              <span class="text-green-400">ReactJs</span>
+              <p class="text-gray-400">14.00 AM - 14.30 AM</p>
+            </div>
+
+            <div class="w-16 h-16">
+              <img src="https://static.cdnlogo.com/logos/r/63/react.svg">
+            </div>
+
+          </div>
+        </div>
+        
+        <div>
+          <button class="w-full mt-4 rounded-lg border-2 border-dashed border-cyan-500 text-cyan-500 py-2">
+            + Add Reminders
+          </button>
+        </div>
+
+      </div>
+    </div>
+    
+</body>
+</html>
