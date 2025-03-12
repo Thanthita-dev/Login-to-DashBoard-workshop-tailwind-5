@@ -2,10 +2,10 @@
 
 A modern and responsive **Admin Dashboard** built using **Tailwind CSS**. 
 ### Dashboard Page
-![Admin Dashboard](./path-to-your-dashboard-image.jpg)
+![Dashboard Screenshot](./6874ddf3-5133-4a94-b17d-6658933599d8.jpg)
 
 ### Login Page
-![Login Page](./path-to-your-login-image.jpg)
+![Login Screenshot](./b8c1d856-8b31-4bf9-b9dd-2bb03fb54482.jpg)
 
 ## 🚀 Features
 
